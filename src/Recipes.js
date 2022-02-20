@@ -36,6 +36,7 @@ function Recipes() {
             return;
         }
 
+        // eslint-disable-next-line default-case
         switch (action) {
             case "add":
                 setRecipes([...recipes, recipe]);

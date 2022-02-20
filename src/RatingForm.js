@@ -11,7 +11,7 @@ function RatingForm({ rating: initialRating, subNotify }) {
         if (evt.target.name === 'numStars') {
             clone[evt.target.name] = parseInt(evt.target.value);
         } else if (evt.target.name === 'recommended') {
-            clone[evt.target.name] = (evt.target.value === 'true');
+            clone[evt.target.name] = (evt.target.value === 'false');
         } else {
             clone[evt.target.name] = evt.target.value;
         }
