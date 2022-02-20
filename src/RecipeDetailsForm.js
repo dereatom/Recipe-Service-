@@ -8,6 +8,7 @@ import RatingForm from './RatingForm.js';
 
 function RecipeDetailsForm({ recipe: initialRecipe, notify }) {
 
+    // eslint-disable-next-line no-unused-vars
     const [recipe, setRecipe] = useState(initialRecipe);
     const [ingredients, setIngredients] = useState(initialRecipe.ingredients);
     const [showIngredientForm, setShowIngredientForm] = useState(false);
@@ -45,6 +46,7 @@ function RecipeDetailsForm({ recipe: initialRecipe, notify }) {
             return;
         }
 
+        // eslint-disable-next-line default-case
         switch (action) {
             case "add-ingredient":
                 setIngredients([...ingredients, ingredient]);
